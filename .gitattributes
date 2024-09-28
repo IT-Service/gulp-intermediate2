@@ -4,3 +4,6 @@
 *.js    text  merge=text diff=text eol=crlf
 *.cjs   text  merge=text diff=text eol=crlf
 *.mjs   text  merge=text diff=text eol=crlf
+*.ts    text  merge=text diff=text eol=crlf
+
+*.yml   text  merge=text diff=text eol=crlf

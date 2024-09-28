@@ -1,0 +1,62 @@
+{
+	"name": "gulp-intermediate2",
+	"type": "module",
+	"version": "0.1.0",
+	"description": "A gulp helper for tools that need files on disk.",
+	"keywords": [
+		"gulpplugin",
+		"gulp",
+		"intermediate",
+		"filesystem"
+	],
+	"author": {
+		"name": "Sergei S. Betke",
+		"email": "Sergey.S.Betke@yandex.ru",
+		"url": "https://github.com/sergey-s-betke"
+	},
+	"homepage": "https://github.com/IT-Service/gulp-intermediate2",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/IT-Service/gulp-intermediate2.git"
+	},
+	"bugs": {
+		"url": "https://github.com/IT-Service/gulp-intermediate2/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/IT-Service/gulp-intermediate2/blob/master/LICENSE"
+		}
+	],
+	"engines": {
+		"node": ">=20.0"
+	},
+	"main": "dist/index.js",
+	"exports": {
+		"./package.json": "./package.json",
+		".": {
+			"import": "./dist/index.js",
+			"default": "./dist/index.cjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"CI": "npm run build && npm run lint && npm run check-exports && npm run test",
+		"check-exports": "attw --pack .",
+		"lint": "tsc",
+		"test": "vitest run"
+	},
+	"dependencies": {
+		"plugin-error": "^1.0.1",
+		"through2": "^3.0.1"
+	},
+	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.16.4",
+		"tsup": "^8.3.0",
+		"typescript": "^5.6.2",
+		"vitest": "^2.1.1"
+	}
+}

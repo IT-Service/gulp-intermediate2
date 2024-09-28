@@ -1,0 +1,61 @@
+{
+	"files.exclude": {
+		".git": true,
+		"node_modules/": true,
+		"**/Thumbs.db": true,
+		"Thumbs.db": true,
+		"**/.~lock.*": true
+	},
+	"files.associations": {
+		"LICENSE": "plaintext",
+		"NOTICE": "plaintext"
+	},
+	"[markdown]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+	},
+	"markdownlint.config": {
+		"default": true,
+		"ol-prefix": {
+			"style": "one"
+		},
+		"line-length": true,
+		"no-duplicate-header": false,
+		"no-bare-urls": false,
+		"no-hard-tabs": true
+	},
+	"editor.autoClosingTags": false,
+	"editor.linkedEditing": true,
+	"editor.folding": true,
+	"editor.foldingHighlight": true,
+	"editor.foldingStrategy": "auto",
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": false,
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"typescript.tsc.autoDetect": "off",
+	"grunt.autoDetect": "off",
+	"jake.autoDetect": "off",
+	"gulp.autoDetect": "off",
+	"task.autoDetect": "off",
+	"conventionalCommits.autoCommit": false,
+	// "conventionalCommits.emojiFormat": "",
+	"conventionalCommits.gitmoji": true,
+	"conventionalCommits.lineBreak": "\n",
+	"conventionalCommits.promptBody": true,
+	"conventionalCommits.promptFooter": true,
+	"conventionalCommits.promptScopes": true,
+	"conventionalCommits.scopes": [
+		"package",
+		"vscode",
+		"git",
+		"github",
+		"github-actions",
+		"deps",
+		"other",
+		"changelog",
+		"readme",
+		"build"
+	],
+	"conventionalCommits.showEditor": false
+}
